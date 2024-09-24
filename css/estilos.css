@@ -1,0 +1,346 @@
+#logo { 
+    background-color: white; /*color del fondo*/
+    height : 100px; /*tamaño del "la imagen"*/
+    float:  left; /*flotando en el lado izquierdo*/
+}
+/* diseño generales*/
+body {
+    background-color: black;
+    color: white; /* Cambia el color del texto a blanco para mayor contraste */
+    font-family: 'Times New Roman', Times, serif; /*estilo de letra*/
+}
+body p {
+    font-size: 20px; /*tamaño del texto*/
+}
+div p{
+    margin-left: 20px; /*"sangria"*/
+}
+h1 {
+    text-align: center; /* alineacion de texto*/
+}
+/*diseño especificos*/
+.pqimp {
+    text-align: center; /* alineacion de texto*/
+}
+.cualtCM {
+    text-align: center; /* alineacion de texto*/
+}
+.preguntas {
+    border-style: solid; /*bordes*/
+    border-color: white; /*color del borde */
+}
+.formulario {
+    text-align: center; /* alineacion de texto*/
+}
+.PLANES {
+    text-align: center; /* alineacion de texto*/
+    font-size: 30px; /*tamaño de letra*/
+}
+/*pagina 5*/
+/*parte 1*/
+.texto1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.titulo1{
+    text-align: center
+}
+#imagenes {
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+    
+} 
+/*fin de parte1*/
+/*parte 2*/
+.texto2{
+    display: grid;
+    grid-template-rows: 65% 35% ;
+    grid-template-columns:  75% 25%;
+    grid-template-areas: "a1 a2"
+                         "a3 a3"/*columnas es necesario nombrarlo para acomodalo a nuestro gusto*//*repetir columna para que que ocupe lo que queremos*/
+}
+#imagenes2 {
+    display: inline-block;
+    height: 300px;
+    grid-area: a2;
+} 
+.titulo2 {
+    grid-area: a1;
+    text-align: center;
+    margin: 0%;
+}
+.contenido2{
+    grid-area: a1;
+    height: auto;
+    align-content: center;
+    margin-top: 20px;
+    
+}
+
+.contenido2_2{
+    grid-area: a3;
+    margin-top: 15px;
+}
+
+/*fin de parte 2*/
+/*parte 3*/
+.texto3{
+    display: grid;
+    grid-template-rows: 45% 55% ;
+    grid-template-columns:  16% 84%;
+    grid-template-areas: "a1 a2"
+                         "a3 a3"/*columnas es necesario nombrarlo para acomodalo a nuestro gusto*//*repetir columna para que que ocupe lo que queremos*/
+
+}
+.titulo3 {
+    text-align: center;
+    grid-area: a2;
+    margin-top: 20px;
+}
+.contenido3{
+    grid-area: a2;
+    height: auto;
+    align-content: end;
+}
+#imagenes3 {
+    grid-area: a1;
+    width: 100%;
+    height: 100%;
+} 
+.contenido3_2 {
+    grid-area: a3 ;
+    
+}
+
+/*fin de parte 3*/
+/*plagina 5 fin*/
+/*  inicio pagina 2*/
+.testimoniolista{
+    list-style-type: none;
+    display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "a1 a2"
+                             "a3 a4"
+                             
+}
+.MarianaG{
+    border: solid 1px;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    grid-area: a1 ;
+}
+.LuisR{
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    border: solid 1px;
+    grid-area: a2 ;
+}
+.SofiaM{
+    border: solid 1px;
+    border-radius: 20px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    border: solid 1px;
+    grid-area: a3 ;
+}
+.JavierT{
+    border-radius: 20px;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    border: solid 1px;
+    text-align: center;
+    border: solid 1px;
+    grid-area: a4 ;
+}
+/*  fin pagina 2*/
+/*tabla de la pagina 1*/
+.tabla {
+    text-align: center; /* alineacion de texto*/
+    font-family: 'Times New Roman', Times, serif;  /*estilo de letra*/
+    font-size: 25px; /*tamaño de letra*/
+    width: 100%; /*que ocupe toda la web*/
+    border-collapse: collapse; /*para que se unan los bordes*/
+}
+th, td {
+    border: solid 1px /*linea de la tabla*/
+}
+.BRONCE{
+    color: #bf8970;
+}
+.PLATA {
+    color: #e3e4e5;
+}
+.ORO {
+    color: #ffbf00;
+}
+table li {
+    color: white;
+    
+}
+.lista {
+    list-style-type: none;
+    text-align: center
+}
+.planestabla{
+    display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns:  33% ;
+        grid-template-areas: "a1 a2 a3"
+}
+.tabladeplanes {
+    grid-area: a2;
+}
+/*pie de pagina*/
+footer, footer p{
+    font-size:  20px;
+    color: hwb(0 66% 33%);
+    text-align: center;
+    font-weight: 900;
+}
+@media screen and (max-width:1000px){
+    /*  Inicio pagina 5*/
+    #imagenes3 {
+        width: 0px;
+        height: 0px;
+    } 
+    #imagenes2 {
+        width: 0px;
+        height: 0px;
+    }
+    #imagenes {
+        width: 0px;
+        height: 0px;
+    } 
+    .texto2{
+        display: grid;
+        grid-template-rows: 60% ;
+        grid-template-columns:  100%;
+        grid-template-areas: "a1"
+                             "a3"/*columnas es necesario nombrarlo para acomodalo a nuestro gusto*//*repetir columna para que que ocupe lo que queremos*/
+    }
+    .titulo2 {
+        grid-area: a1;
+        text-align: center;
+
+    }
+    .contenido2{
+        grid-area: a1;
+        height: auto;
+        align-content: center;
+        margin-top: 40px;
+        
+    }
+    
+    .contenido2_2{
+        grid-area: a3;
+        margin-top: 0px;
+    }
+    .texto3{
+        display: grid;
+        grid-template-rows: 40%;
+        grid-template-columns:  100%;
+        grid-template-areas: "a2"
+                             "a3"
+    }
+    .titulo3 {
+        text-align: center;
+        grid-area: a2;
+        
+    }
+    .contenido3{
+        grid-area: a2;
+        margin-top: 60px;
+        margin-left: 20px;
+    }
+    .contenido3_2 {
+        grid-area: a3 ;
+        margin-left: 20px;
+    }
+    .piedepagina5{
+        margin-top: 150px;
+    }
+    /*  Fin pagina 5*/
+    
+    .planestabla{
+        display: grid;
+            grid-template-rows: 100%;
+            grid-template-columns:  100%;
+            grid-template-areas: "a1"
+    }
+    .tabladeplanes {
+        grid-area: a1;
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:1300px){
+    .texto3{
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width:500px){
+    .texto3{
+        margin-top: 50px;
+    }
+    .titulo3 {
+        margin-top: 20px;
+        
+    }
+
+    .testimoniolista{
+        list-style-type: none;
+        display: grid;
+            grid-template-rows: 25%;
+            grid-template-columns: 100%;
+            grid-template-areas: "a1"
+                                 "a2"
+                                 "a3"
+                                 "a4"
+                                 
+    }
+    .MarianaG{
+        margin: 0%;
+        text-align: center;
+        border: solid 1px;
+        grid-area: a1 ;
+    }
+    .LuisR{
+        margin: 0%;
+        text-align: center;
+        border: solid 1px;
+        grid-area: a2 ;
+    }
+    .SofiaM{
+        margin: 0%;
+        text-align: center;
+        border: solid 1px;
+        grid-area: a3 ;
+    }
+    .JavierT{
+        padding: 0%;
+        margin: 0%;
+        text-align: center;
+        border: solid 1px;
+        grid-area: a4 ;
+    }
+    ul{
+        padding: 0%;
+    }
+}
+@media screen and (max-width:320px){
+    .texto3{
+        margin-top: 60px;
+    }
+    .titulo3 {
+        margin-top: 60px;
+        
+    }
+}
