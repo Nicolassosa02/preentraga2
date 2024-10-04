@@ -1,0 +1,16 @@
+body {
+  background-image: linear-gradient(to bottom, black, rgb(82, 82, 82));
+}
+
+@media only screen and (min-width: 780px) {
+  .footerdelapagina2 {
+    margin: 150px;
+  }
+}
+@media only screen and (min-width: 1238px) {
+  .footerdelapagina2 {
+    margin: 200px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
