@@ -12,5 +12,12 @@ body {
     margin: 200px;
   }
 }
+.titulo-white {
+  color: white;
+}
+
+.titulo-grey {
+  color: grey;
+}
 
 /*# sourceMappingURL=styles.css.map */

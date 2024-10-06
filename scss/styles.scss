@@ -9,3 +9,11 @@ body{
     .footerdelapagina2{margin: 200px;
 }
 }
+
+$coloresDeLetra: white, grey;
+
+@each $color in $coloresDeLetra{
+    .titulo-#{$color}{
+        color: $color;
+    }
+}
