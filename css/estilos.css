@@ -98,6 +98,7 @@ h1 {
     text-align: center;
     grid-area: a2;
     margin-top: 20px;
+    padding-top: 15px;
 }
 .contenido3{
     grid-area: a2;
